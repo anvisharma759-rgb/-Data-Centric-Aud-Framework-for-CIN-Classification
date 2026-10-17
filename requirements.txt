@@ -1,5 +1,5 @@
 # Versions printed by Cell 1 of notebooks/04_fold5_comparison_review.ipynb (Colab, Tesla T4, CUDA 13.0).
-# Python on that runtime: 3.13.15. Confirm these match Sec. II.G of the paper.
+# Python on that runtime: 3.13.15. 
 torch==2.11.0
 torchvision==0.26.0
 scikit-learn==1.6.1
