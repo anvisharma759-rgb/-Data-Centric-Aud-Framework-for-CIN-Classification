@@ -55,6 +55,15 @@ Please check the dataset's licence/terms on that page. The notebooks expect this
 
 Change `DATASET_ROOT` in the configuration cell if you store it elsewhere.
 
+Colab's file panel cannot upload folders. Upload the dataset as a single .zip instead and unzip it:
+
+    !mkdir -p /content/data
+    !unzip -q /content/YOUR_ZIP_NAME.zip -d /content/data
+
+Unzipping can add an extra nested folder. Run
+`!find /content/data -maxdepth 4 -type d | head -60`
+and set `DATASET_ROOT` in the configuration cell to the folder that directly contains CIN1, CIN2 and CIN3.
+
 ## Run in Colab
 
 1. Open a notebook from `notebooks/` in Colab (File → Open notebook → GitHub, or upload it) and select **Runtime → Change runtime type → GPU** (the runs used a T4).
